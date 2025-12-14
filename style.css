@@ -1,0 +1,145 @@
+/* --- Global Styles & Reset --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Light background */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #007bff; /* Primary Blue Color */
+    font-weight: 700;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #ffffff;
+    padding: 40px 20px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+header .status {
+    margin-top: 0;
+    color: #7f8c8d;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+/* --- Section Cards --- */
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* --- About Details Table --- */
+.details-table {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.details-table div {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.details-table div:last-child {
+    border-bottom: none;
+}
+
+.details-table strong {
+    min-width: 80px;
+    display: inline-block;
+    color: #2c3e50;
+}
+
+
+/* --- Skills Section --- */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.skills-list span {
+    background-color: #e9ecef;
+    color: #007bff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+/* --- Contact Section --- */
+.email-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.email-link a:hover {
+    text-decoration: underline;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+/* --- Responsive Design (Optional, but recommended) --- */
+@media (min-width: 600px) {
+    .details-table {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .details-table div {
+        border-bottom: none;
+        padding: 0;
+    }
+}
